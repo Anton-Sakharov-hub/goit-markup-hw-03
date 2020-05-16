@@ -61,7 +61,7 @@
     <!-- Основной контейнер -->
     <main>
       <!-- Секция Герой -->
-      <section class="scn-hero">
+      <section class="hero-scn">
         <div class="hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
           <a href="" class="button">Заказать услугу</a>
@@ -162,16 +162,16 @@
             <p class="position">Product Designer</p>
             <ul class="list">
               <li>
-                <a href="" aria-label="Facebook">Facebook</a>
+                <a href="" class="icon" aria-label="Facebook">Facebook</a>
               </li>
               <li>
-                <a href="" aria-label="Twitter">Twitter</a>
+                <a href="" class="icon" aria-label="Twitter">Twitter</a>
               </li>
               <li>
-                <a href="" aria-label="Instagram">Instagram</a>
+                <a href="" class="icon" aria-label="Instagram">Instagram</a>
               </li>
               <li>
-                <a href="" aria-label="LinkedIn">LinkedIn</a>
+                <a href="" class="icon" aria-label="LinkedIn">LinkedIn</a>
               </li>
             </ul>
           </li>
@@ -185,40 +185,40 @@
             <p class="position">Frontend Developer</p>
             <ul class="list">
               <li>
-                <a href="" aria-label="Facebook">Facebook</a>
+                <a href="" class="icon" aria-label="Facebook">Facebook</a>
               </li>
               <li>
-                <a href="" aria-label="Twitter">Twitter</a>
+                <a href="" class="icon" aria-label="Twitter">Twitter</a>
               </li>
               <li>
-                <a href="" aria-label="Instagram">Instagram</a>
+                <a href="" class="icon" aria-label="Instagram">Instagram</a>
               </li>
               <li>
-                <a href="" aria-label="LinkedIn">LinkedIn</a>
+                <a href="" class="icon" aria-label="LinkedIn">LinkedIn</a>
               </li>
             </ul>
+          </li>
+
+          <li class="item">
             <img
               src="./images-web-studio-page/Robert-Jakis.jpg"
               alt="фото Роберта Джекиса"
               width="278"
             />
-          </li>
-
-          <li class="item">
             <h3 class="card-title">Robert Jakis</h3>
             <p class="position">Marketing</p>
             <ul class="list">
               <li>
-                <a href="" aria-label="Facebook">Facebook</a>
+                <a href="" class="icon" aria-label="Facebook">Facebook</a>
               </li>
               <li>
-                <a href="" aria-label="Twitter">Twitter</a>
+                <a href="" class="icon" aria-label="Twitter">Twitter</a>
               </li>
               <li>
-                <a href="" aria-label="Instagram">Instagram</a>
+                <a href="" class="icon" aria-label="Instagram">Instagram</a>
               </li>
               <li>
-                <a href="" aria-label="LinkedIn">LinkedIn</a>
+                <a href="" class="icon" aria-label="LinkedIn">LinkedIn</a>
               </li>
             </ul>
           </li>
@@ -232,16 +232,16 @@
             <p class="position">UI Designer</p>
             <ul class="list">
               <li>
-                <a href="" aria-label="Facebook">Facebook</a>
+                <a href="" class="icon" aria-label="Facebook">Facebook</a>
               </li>
               <li>
-                <a href="" aria-label="Twitter">Twitter</a>
+                <a href="" class="icon" aria-label="Twitter">Twitter</a>
               </li>
               <li>
-                <a href="" aria-label="Instagram">Instagram</a>
+                <a href="" class="icon" aria-label="Instagram">Instagram</a>
               </li>
               <li>
-                <a href="" aria-label="LinkedIn">LinkedIn</a>
+                <a href="" class="icon" aria-label="LinkedIn">LinkedIn</a>
               </li>
             </ul>
           </li>
@@ -252,22 +252,22 @@
       <section class="clients">
         <h2 class="main-title">Постоянные клиенты</h2>
         <ul class="list container">
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 1">Логотип компании 1</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 2">Логотип компании 2</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 3">Логотип компании 3</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 4">Логотип компании 4</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 5">Логотип компании 5</a>
           </li>
-          <li>
+          <li class="item">
             <a href="" aria-label="Логотип компании 6">Логотип компании 6</a>
           </li>
         </ul>
@@ -276,27 +276,35 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <a href="/" class="logo"
-        ><span class="logo-blue">Web</span>
-        <span class="logo-white">Studio</span></a
-      >
-      <p>
-        <span class="footer-text">г. Киев, пр-т Леси Украинки,</span><br />
-        <span class="footer-contacts"
-          >26 info@example.com<br />
-          +38 099 111 11 11</span
-        >
-      </p>
-      <div>
-        <b class="footer-call">присоединяйтесь</b>
-        <ul>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">LinkeIn</a></li>
-        </ul>
+      <div class="footer-container">
+        <div class="footer-contacts-cntr">
+          <a href="/" class="logo"
+            ><span class="logo-blue">Web</span>
+            <span class="logo-white">Studio</span></a
+          >
+          <p class="footer-contacts">
+            <span class="footer-address">г. Киев, пр-т Леси Украинки, 26</span
+            ><br />
+            <span class="footer-mail">info@example.com</span><br />
+            <span class="footer-number">+38 099 111 11 11</span>
+          </p>
+        </div>
+        <div class="footer-call-cntr">
+          <b class="footer-call">присоединяйтесь</b>
+          <ul class="items list">
+            <li><a href="" class="icon">Facebook</a></li>
+            <li><a href="" class="icon">Twitter</a></li>
+            <li><a href="" class="icon">Instagram</a></li>
+            <li><a href="" class="icon">LinkeIn</a></li>
+          </ul>
+        </div>
+        <div class="mailling-cntr">
+          <b class="mailling">Подпишитесь на рассылку</b>
+        </div>
       </div>
-      <p class="copyrights">2020 | Developed by GoIT Students</p>
+      <div class="copyrights-cntr">
+        <p>2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
