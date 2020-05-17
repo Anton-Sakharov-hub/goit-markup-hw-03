@@ -32,21 +32,6 @@ html {
   box-sizing: inherit;
 }
 
-/* .test {
-  height: 400px;
-  display: flex;
-}
-
-.test-item:nth-child(2) {
-  margin-left: 20px;
-} 
-
-.test-item {
-  background-color: brown;
-  width: 100px;
-  margin: auto;
-} */
-
 body {
   color: var(--main-text-color);
   background-color: var(--main-bcg-color);
@@ -74,6 +59,9 @@ img {
 
 .link-accent:hover,
 .link-accent:focus {
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px;
+
   color: var(--accent-color);
 }
 
@@ -127,10 +115,15 @@ img {
   width: 1200px;
 }
 
+.nav {
+  display: flex;
+}
+
 .logo {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
+  /* outline: 2px solid red; */
 
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -156,12 +149,13 @@ img {
 }
 
 /* .item {
-  background-color: brown; 
-}*/
+  outline: 2px solid red;
+} */
 
+.site-nav > .item,
 .nav-link {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -183,6 +177,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.contact > .item + .item {
+  margin-left: 30px;
 }
 
 /* Герой */
@@ -285,11 +283,12 @@ img {
 .occupations-list-item {
   width: 380px;
   height: 70px;
-  padding: 27px 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  text-align: center;
 
   color: var(--main-white-color);
   background-color: rgba(47, 48, 58, 0.8);
