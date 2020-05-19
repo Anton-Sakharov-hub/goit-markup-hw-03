@@ -284,7 +284,7 @@ img {
 }
 
 .occupations-list-item {
-  width: 380px;
+  width: 370px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -340,7 +340,7 @@ img {
 }
 
 .item-cards > .item {
-  width: 278px;
+  width: 270px;
   height: 422px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -528,6 +528,10 @@ img {
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.wrap > img {
+  margin: 0;
 }
 
 .wrap > .item:nth-last-child(-n + 3) {
