@@ -123,7 +123,6 @@ img {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
-  /* outline: 2px solid red; */
 
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -147,10 +146,6 @@ img {
 .site-nav .item:not(:first-child) {
   margin-left: 50px;
 }
-
-/* .item {
-  outline: 2px solid red;
-} */
 
 .site-nav > .item,
 .nav-link {
@@ -190,7 +185,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
-  padding-bottom: 99px;
+  padding-bottom: 200px;
 
   background-color: grey;
 }
@@ -219,7 +214,6 @@ img {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
-  margin-bottom: 200px;
   border-radius: 4px;
 
   color: var(--main-white-color);
@@ -238,8 +232,10 @@ img {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 99px;
-  padding-bottom: 89px;
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
+
+  background-color: var(--main-white-color);
 }
 
 .advantages-title {
@@ -262,6 +258,11 @@ img {
   letter-spacing: 0.03em;
 }
 
+.advant-items {
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ececec;
+}
+
 .advant-items > .item + .item {
   margin-left: 30px;
 }
@@ -280,7 +281,10 @@ img {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--main-white-color);
 }
 
 .occupations-list-item {
@@ -365,6 +369,8 @@ img {
   margin-left: auto;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--main-white-color);
 }
 
 .clients .item.item:not(:first-child) {
