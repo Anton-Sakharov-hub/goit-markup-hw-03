@@ -522,6 +522,8 @@ img {
 
 .wrap {
   flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .wrap > .item:nth-child(3n) {
@@ -536,9 +538,11 @@ img {
   overflow: hidden;
 }
 
-.wrap > img {
-  margin: 0;
-}
+/* .wrap > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
 
 .wrap > .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
@@ -549,10 +553,15 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
-  padding-right: 24px;
+  padding-right: 16px;
   padding-left: 24px;
   padding-bottom: 20px;
 }
+
+/* .card-content:nth-child(2), */
+/* .wrap > .item:nth-child(2) > .card-content {
+  padding-right: 20px;
+} */
 
 .subject-list {
   display: flex;
@@ -570,6 +579,10 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
+/* .change-fs {
+  font-size: 16px;
+} */
 
 .work-examples .description {
   display: flex;
